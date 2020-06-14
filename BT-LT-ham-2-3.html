@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT-LT-Hàm-02-Bài-3</title>
+</head>
+
+<body>
+    <script>
+        var giaiThua = 1;
+        function tinhGiaiThua(soNhap) {
+            for (let i = 0; i < soNhap; soNhap--) {
+                giaiThua *= soNhap;
+            }
+            return giaiThua;
+        }
+        var soNhap = +prompt('Nhập số nguyên bất kỳ: ');
+        tinhGiaiThua(soNhap);
+        alert('Giai thừa số vừa nhập là: ' + giaiThua);
+    </script>
+</body>
+
+</html>

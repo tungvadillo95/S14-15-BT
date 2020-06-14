@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi giữa feet-meters</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Nhập giá trị Meters(m)</th>
+            <th>Giá trị Feet(ft)</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="nhap1" oninput="doiGiaTri1();">
+            </td>
+            <td>
+                <input type="text" id="xuat1">
+            </td>
+        </tr>
+        <tr>
+            <th>Nhập giá trị Feet(ft) </th>
+            <th>Giá trị Meters(m)</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="nhap2" oninput="doiGiaTri2();">
+            </td>
+            <td>
+                <input type="text" id="xuat2">
+            </td>
+        </tr>
+    </table>
+    <script>
+        function doiGiaTri1() {
+            var giaTri1 = document.getElementById('nhap1').value;
+            document.getElementById('xuat1').value = giaTri1 * 3.279;
+        }
+        function doiGiaTri2() {
+            var giaTri1 = document.getElementById('nhap2').value;
+            document.getElementById('xuat2').value = giaTri1 * 0.305;
+        }
+    </script>
+</body>
+
+</html>

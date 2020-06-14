@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT-LT-Hàm-02-Bài-4</title>
+</head>
+
+<body>
+    <script>
+        var kyTu = prompt('Nhập ký tự: ');
+        function kiemTra(kyTu) {
+            if (kyTu * 0 == 0) {
+                alert('Ký tự nhập vào là ký tự số !');
+                return true;
+            }
+            else {
+                alert('Ký tự nhập vào không phải là ký tự số !');
+                return false;
+            }
+        }
+        console.log(kiemTra(kyTu));
+    </script>
+</body>
+
+</html>

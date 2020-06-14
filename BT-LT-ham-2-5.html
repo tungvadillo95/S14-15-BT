@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT-LT-Hàm-02-Bài-5</title>
+</head>
+
+<body>
+    <script>
+        var mang = [];
+        function soNhoNhat() {
+            for (let i = 0; i < 3; i++) {
+                mang[i] = +prompt('Nhập số nguyên bất kỳ: ');
+            }
+            var min = mang[0];
+            for (let i = 1; i < 3; i++) {
+                if (mang[i] <= mang[i - 1]) {
+                    min = mang[i];
+                }
+            }
+            return min;
+        }
+        min = soNhoNhat();
+        alert('Số nhỏ nhất là: ' + min);
+    </script>
+</body>
+
+</html>

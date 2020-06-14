@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT-LT-Hàm-02-Bài-7</title>
+</head>
+
+<body>
+    <script>
+        var a = +prompt('Nhập một số nguyên bất kỳ: ');
+        var b = +prompt('Nhập một số nguyên bất kỳ: ');
+        var temp = 0;
+        function doiCho() {
+            temp = a;
+            a = b;
+            b = temp;
+            return a, b;
+        }
+        doiCho();
+        console.log(a);
+        console.log(b);
+    </script>
+</body>
+
+</html>

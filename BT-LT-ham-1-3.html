@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT-LT-Hàm-01-Bài-3</title>
+</head>
+
+<body>
+    <Script>
+        var tinhTong;
+        function soSanh(a, b) {
+            if (a > b) {
+                alert('Tham số thứ nhất lớn hơn tham số thứ hai.')
+            }
+            if (a <= b) {
+                tinhTong = a + b;
+                alert('Tổng hai tham số là: ' + tinhTong)
+            }
+            return tinhTong;
+        }
+        var a = +prompt('Nhập giá trị tham số thứ nhất: ');
+        var b = +prompt('Nhập giá trị tham số thứ hai: ');
+        soSanh(a, b);
+    </Script>
+</body>
+
+</html>

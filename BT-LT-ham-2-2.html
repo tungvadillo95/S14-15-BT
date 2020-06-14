@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT-LT-Hàm-02-Bài-2</title>
+</head>
+
+<body>
+    <script>
+        var dienTich;
+        var chuVi;
+        const PI = 3.14;
+        function tinhDienTich(banKinh) {
+            dienTich = banKinh * Math.pow(PI, 2);
+            alert('Diện tích hình tròn là: ' + dienTich + ' m2');
+            return dienTich;
+        }
+        function tinhChuVi(banKinh) {
+            chuVi = 2 * banKinh * PI;
+            alert('Chu vi hình tròn là: ' + chuVi + ' m');
+            return chuVi;
+        }
+        var banKinh = +prompt('Nhập bán kính hình tròn(m): ');
+        tinhDienTich(banKinh);
+        tinhChuVi(banKinh);
+    </script>
+</body>
+
+</html>

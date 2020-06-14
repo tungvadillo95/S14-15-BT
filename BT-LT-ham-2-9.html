@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT-LT-Hàm-02-Bài-9</title>
+</head>
+
+<body>
+    <script>
+        function timKyTu() {
+            var soPhanTu = +prompt('Nhập số phần tử của mảng: ');
+            var mang = [];
+            for (let i = 0; i < soPhanTu; i++) {
+                mang[i] = prompt('Nhập phần tử(ký tự) thứ ' + i + ' là: ');
+            }
+            var kyTuTim = prompt('Nhập ký tự cần tìm là: ');
+            var check = 0;
+            for (let i = 0; i < soPhanTu; i++) {
+                if (mang[i] == kyTuTim) {
+                    check++;
+                }
+            }
+            if (check != 0) {
+                alert('Ký tự cần tìm có nằm trong mảng');
+            }
+            else {
+                alert('Ký tự cần tìm không nằm trong mảng');
+                check = -1;
+            }
+            return check;
+        }
+        console.log(timKyTu());
+    </script>
+</body>
+
+</html>

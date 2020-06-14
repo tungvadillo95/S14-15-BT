@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT-LT-Hàm-01-Bài-5</title>
+</head>
+
+<body>
+    <script>
+        var ngoiSao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        var chomSao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        var check = 0;
+        function timChomSao(x) {
+            for (let i = 0; i < ngoiSao.length; i++) {
+                if (x == ngoiSao[i]) {
+                    alert('Ngôi sao ' + x + ' có chòm sao là ' + chomSao[i]);
+                    check++;
+                    return chomSao[i];
+                }
+            }
+            if (check == 0) alert('Không tìm thấy ngôi sao nào !');
+        }
+        var x = prompt('Nhập tên ngôi sao: ');
+        console.log(timChomSao(x));
+    </script>
+</body>
+
+</html>

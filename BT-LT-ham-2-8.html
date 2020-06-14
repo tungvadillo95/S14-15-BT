@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT-LT-Hàm-02-Bài-8</title>
+</head>
+
+<body>
+    <script>
+        function daoNguoc() {
+            var soPhanTu = +prompt('Nhập số phần tử của mảng: ');
+            var mang = [];
+            for (let i = 0; i < soPhanTu; i++) {
+                mang[i] = +prompt('Nhập phần tử(số nguyên) thứ ' + i + ' là: ');
+            }
+            mang.reverse();
+            return mang;
+        }
+        console.log(daoNguoc());
+    </script>
+</body>
+
+</html>
