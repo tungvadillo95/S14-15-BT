@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ứng dụng quản lý sản phẩm</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Add New Product</h2>
+        <div>
+            <input id="them" type="text" placeholder="New Product" style="width: 400px;">
+            <input type="button" value="Add" onclick="them()">
+        </div>
+        <h2>Display All Product</h2>
+        <table class="table table-striped">
+            <thead style="font-weight: bold;">
+                <tr>
+                    <td>Product Name</td>
+                    <td> Product</td>
+                </tr>
+            </thead>
+            <tbody id='table'>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function them() {
+            themHang();
+        }
+        let mang = [];
+
+        function drawTable() {
+            let str = "";
+            for (let i = 0; i < mang.length; i++) {
+                str += `<tr><td>${mang[i]}</td><td><button type='button' onclick="sua(${i})" class='btn btn-success'>Edit</button>
+                        <button type='button' class='btn btn-danger' onclick="xoa(${i})">Delete</button></td></tr>`;
+            }
+            document.getElementById('table').innerHTML = str;
+        }
+        function themHang() {
+            mang.push(document.getElementById('them').value);
+            drawTable();
+        }
+        function xoa(i) {
+            mang.splice(i, 1);
+            drawTable();
+        }
+        function sua(i) {
+            mang[i] = prompt('Tên mới sản phẩm: ');
+            drawTable();
+        }
+    </script>
+</body>
+
+</html>
